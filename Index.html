@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+</body>
+
+
+
+
+     <!-- <script src="Interaction.js"></script> -->
+
+<script>
+    // console.log("Hello, World!");
+    // alert("Hello, World!");
+    // result = prompt("Title", ["Option 1", "Option 2", "Option 3"]);
+
+// console.log(result);
+
+// let age = prompt('How old are you?', 100);
+
+// alert(`You are ${age} years old!`); // You are 100 years old!
+
+// result = confirm("Are you sure?");
+
+// let isBoss = confirm("Are you the boss?");
+
+// alert( isBoss ); // true if OK is pressed
+
+// Declare a function
+function greet(name) {
+  return `Hello, ${name}! Welcome to JavaScript.`;
+}
+
+// Call it
+let msg = greet('Sohil');
+console.log(msg); // Hello, Sohil! Welcome to JavaScript.
+
+// Default parameters
+function discount(price, percent = 10) { // 10% is default
+  return price - (price * percent / 100);
+}
+console.log(discount(1000));     // 900 (uses default 10%)
+console.log(discount(1000, 20)); // 800 (uses 20%)
+ 
+
+</script>
+</html>
