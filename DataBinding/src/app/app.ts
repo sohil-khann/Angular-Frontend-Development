@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Eventbindingdemo } from './eventbindingdemo/eventbindingdemo';
+import { Twowaybinding } from './twowaybinding/twowaybinding';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Eventbindingdemo],
+  imports: [RouterOutlet, Eventbindingdemo,Twowaybinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

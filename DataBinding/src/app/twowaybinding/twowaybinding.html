@@ -1,0 +1,300 @@
+<!-- src/app/app.html -->
+
+<!-- 
+  This page is a Real-Time E-commerce Order Summary demo.
+  Goal: Show how Two-Way Data Binding ([(ngModel)]) works along with
+  previous bindings we already learned:
+
+  Interpolation        => {{ ... }} (display values)
+  Property Binding     => [disabled] (enable/disable buttons)
+  Class Binding        => [class.xxx] (apply CSS classes based on state)
+  Style Binding        => [style.xxx] (dynamic inline styles)
+  Event Binding        => (click), (keyup.enter), (submit), (ngModelChange)
+  Two-Way Binding      => [(ngModel)] (UI <-> Component sync)
+-->
+
+<div class="page">
+  <!-- Page heading (static text) -->
+  <h2>Order Summary (Two-Way Binding Demo)</h2>
+
+  <!-- Card container: gives a neat box around the order summary -->
+  <div class="card">
+    <!-- ----------------------------------------------------------
+         1) INTERPOLATION (Component → View)
+         - We only display text values from the component.
+         - These values usually come from API / session in real apps.
+         ---------------------------------------------------------- -->
+    <div class="row"><b>Customer:</b> {{ customerName }}</div>
+    <div class="row"><b>Order Id:</b> {{ orderId }}</div>
+    <div class="row"><b>Product:</b> {{ productName }}</div>
+
+    <hr />
+
+    <!-- ----------------------------------------------------------
+         2) CLASS BINDING (Visual State: Paid / Pending)
+         - "badge" class is always applied.
+         - paid/pending class is applied conditionally based on isPaymentDone.
+         - This is how dashboards show status in real apps.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Payment Status:</b>
+
+      <!-- 
+        If isPaymentDone === true  -> apply class "paid" (green badge)
+        If isPaymentDone === false -> apply class "pending" (yellow badge)
+      -->
+      <span
+        class="badge"
+        [class.paid]="isPaymentDone"
+        [class.pending]="!isPaymentDone"
+      >
+        <!-- Interpolation calling helper method -->
+        {{ getPaymentLabel() }}
+      </span>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         3) CLASS BINDING + EVENT BINDING (Membership Toggle)
+         - Membership is shown visually as Premium/Regular badge.
+         - Clicking button changes the boolean flag in component.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Membership:</b>
+
+      <!-- 
+        If isPremiumCustomer === true  -> apply "premium" (blue badge)
+        If isPremiumCustomer === false -> apply "regular" (gray badge)
+      -->
+      <span
+        class="badge"
+        [class.premium]="isPremiumCustomer"
+        [class.regular]="!isPremiumCustomer"
+      >
+        {{ getMembershipLabel() }}
+      </span>
+
+      <!-- 
+        Event Binding:
+        Clicking calls toggleMembership() which flips isPremiumCustomer.
+        Angular updates badge and final payable automatically.
+      -->
+      <button
+        type="button"
+        (click)="toggleMembership()"
+        style="margin-left: 10px"
+      >
+        Toggle Membership
+      </button>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         4) CLASS BINDING (Low Stock Warning)
+         - When stock is low (<= 5), highlight stock number in red/bold.
+         - We are not hiding anything (no ngIf), only styling.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Stock Left:</b>
+
+      <!-- Apply "low-stock" class only when stockLeft <= 5 -->
+      <span [class.low-stock]="stockLeft <= 5">
+        {{ stockLeft }}
+      </span>
+    </div>
+
+    <hr />
+
+    <!-- ----------------------------------------------------------
+         5) TWO-WAY BINDING + PROPERTY + EVENT BINDING (Quantity)
+         - [(ngModel)] keeps input and quantity property always in sync.
+         - (ngModelChange) is used to validate and keep quantity in range.
+         - [disabled] prevents invalid clicks (below 1 / above 10).
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Quantity:</b>
+
+      <!-- 
+        Event Binding:
+        Decrease quantity (disabled when quantity is already minimum 1) 
+        -->
+      <button
+        type="button"
+        (click)="decreaseQuantity()"
+        [disabled]="quantity <= 1"
+      >
+        -
+      </button>
+
+      <!-- 
+        Two-Way Binding:
+        - If user types, quantity is updated automatically.
+        - If TS updates quantity (via +/- buttons), the input updates automatically.
+
+        Why (ngModelChange)?
+        - User can type invalid values like 0, -1, 999 etc.
+        - We validate and correct via onQuantityChanged().
+      -->
+      <input
+        type="number"
+        [(ngModel)]="quantity"
+        (ngModelChange)="onQuantityChanged($event)"
+        min="1"
+        max="10"
+        style="width: 80px; margin: 0 6px"
+      />
+
+      <!-- 
+        Event Binding:
+        Increase quantity (disabled when quantity reaches maximum 10) 
+        -->
+      <button
+        type="button"
+        (click)="increaseQuantity()"
+        [disabled]="quantity >= 10"
+      >
+        +
+      </button>
+
+      <!-- Real-time total calculation -->
+      <span style="margin-left: 10px">
+        <b>Total:</b> ₹{{ price * quantity }}
+      </span>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         6) TWO-WAY BINDING + EVENT BINDING (Coupon)
+         - [(ngModel)] stores user typed coupon into couponCode.
+         - (keyup.enter) allows user to press Enter to apply coupon.
+         - (click) Apply button triggers same logic.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Coupon:</b>
+
+      <!-- Two-way binding keeps couponCode updated as user types -->
+      <input
+        type="text"
+        [(ngModel)]="couponCode"
+        (keyup.enter)="applyCoupon()"
+        style="margin-left: 6px; width: 160px"
+      />
+
+      <!-- Click to apply coupon -->
+      <button
+        type="button"
+        (click)="applyCoupon()"
+        style="margin-left: 6px"
+      >
+        Apply
+      </button>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         7) TWO-WAY BINDING + EVENT BINDING (Shipping Dropdown)
+         - [(ngModel)] keeps selected dropdown value synced with shippingOption.
+         - (ngModelChange) lets us show message/update additional logic.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Shipping:</b>
+
+      <!-- Two-way binding updates shippingOption automatically -->
+      <select
+        [(ngModel)]="shippingOption"
+        (ngModelChange)="onShippingChanged($event)"
+        style="margin-left: 6px"
+      >
+        <option value="Standard">Standard</option>
+        <option value="Express">Express</option>
+        <option value="NextDay">Next Day</option>
+      </select>
+    </div>
+
+    <hr />
+
+    <!-- ----------------------------------------------------------
+         8) STYLE BINDING (Delivery Progress Bar)
+         - The width of progress-fill depends on deliveryProgressPercent (0..100)
+         - This is a classic real-time use case of style binding.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Delivery Progress:</b>
+      <span>{{ deliveryProgressPercent }}%</span>
+
+      <!-- Outer bar track -->
+      <span class="progress-box">
+        <!-- Inner fill:
+             [style.width.%] sets width like 35%, 60%, 100% -->
+        <span
+          class="progress-fill"
+          [style.width.%]="deliveryProgressPercent"
+        ></span>
+      </span>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         9) INTERPOLATION WITH METHOD (Business Rule)
+         - Premium customers get 20% discount.
+         - Value recalculates when quantity or membership changes.
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <b>Final Payable:</b> ₹{{ getFinalPayable() }}
+    </div>
+
+    <hr />
+
+    <!-- ----------------------------------------------------------
+         10) EVENT + PROPERTY + STYLE BINDING (Pay Now)
+         - (click) triggers payNow()
+         - [disabled] prevents paying again after success
+         - [style.opacity] gives slight visual state guidance
+         ---------------------------------------------------------- -->
+    <div class="row">
+      <button
+        type="button"
+        (click)="payNow()"
+        [disabled]="isPaymentDone"
+      >
+        Pay Now
+      </button>
+
+      <!-- Informational text becomes clearer after payment -->
+      <span
+        [style.marginLeft.px]="10"
+        [style.opacity]="isPaymentDone ? 1 : 0.7"
+      >
+        (After payment, you can place the order)
+      </span>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         11) FORM SUBMIT EVENT (Place Order)
+         - (submit) calls placeOrder($event)
+         - event.preventDefault() in TS prevents page reload
+         - [disabled] ensures user can place order only after payment
+         ---------------------------------------------------------- -->
+    <form (submit)="placeOrder($event)" class="row">
+      <!-- Submit button disabled until payment is done -->
+      <button type="submit" [disabled]="!isPaymentDone">
+        Place Order
+      </button>
+
+      <!-- 
+        "Disabled-like" message without ngIf:
+        - opacity reduced when payment is pending
+        - pointerEvents set to none to behave like disabled text
+      -->
+      <span
+        [style.marginLeft.px]="10"
+        [style.opacity]="isPaymentDone ? 1 : 0.5"
+        [style.pointerEvents]="isPaymentDone ? 'auto' : 'none'"
+      >
+        (Order submission enabled after payment)
+      </span>
+    </form>
+
+    <!-- ----------------------------------------------------------
+         12) UI FEEDBACK MESSAGE (Interpolation)
+         - Shows result of user actions:
+           quantity change, coupon apply, shipping change, payment done, order placed, etc.
+         ---------------------------------------------------------- -->
+    <div class="message">{{ uiMessage }}</div>
+  </div>
+</div>
