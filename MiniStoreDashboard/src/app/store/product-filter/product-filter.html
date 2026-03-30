@@ -1,0 +1,50 @@
+<div class="card">
+  <!-- Card heading (static text) -->
+  <div class="title">Filters</div>
+
+  <!-- Category label -->
+  <label class="label">Category</label>
+
+  <!-- Category dropdown
+       [(ngModel)]="selectedCategory"  -> Two-way binding:
+       - Shows current selectedCategory in dropdown
+       - Updates selectedCategory when user selects a new option
+
+       (change)="apply()" -> When user changes category,
+       call apply() to emit filtersChanged event to parent -->
+  <select class="control" [(ngModel)]="selectedCategory" (change)="apply()">
+
+    <!-- Populate dropdown options using for loop
+         - Loop over categories array received from parent via @Input()
+         [value]="c" -> actual value to set when selected
+         {{ c }}     -> text displayed to the user -->
+          @for (c of categories; track c)
+          {
+              <option [value]="c">{{ c }}</option>
+          }
+  </select>
+
+  <!-- Search label -->
+  <label class="label">Search</label>
+
+  <!-- Search textbox
+       [(ngModel)]="searchText" -> Two-way binding:
+       - Shows current searchText
+       - Updates searchText as user types
+
+       (input)="apply()" -> Every time user types,
+       call apply() to emit updated filters to the parent -->
+  <input
+    class="control"
+    [(ngModel)]="searchText"
+    (input)="apply()"
+    placeholder="Type product name..." />
+
+  <!-- Reset button section -->
+  <div class="actions">
+    <!-- Reset button
+         Calls reset() in component class.
+         reset() sets values back to defaults and then calls apply() -->
+    <button class="btn light" (click)="reset()">Reset</button>
+  </div>
+</div>

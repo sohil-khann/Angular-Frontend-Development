@@ -1,0 +1,30 @@
+<header class="header">
+  <!-- Left side: Branding section -->
+  <div class="brand">
+    <!-- App logo block (just UI text, not dynamic) -->
+    <div class="logo">MSD</div>
+
+    <div>
+      <!-- App title (static text) -->
+      <div class="name">Mini Store Dashboard</div>
+    </div>
+  </div>
+
+  <!-- Right side: Cart section -->
+  <div class="cart">
+
+    <!-- Displays cartCount received from Parent using @Input()
+         Parent binds like: [cartCount]="cartCount" -->
+    <div class="badge">🛒 {{ cartCount }}</div>
+
+    <!-- Clear Cart button
+         (click)="onClear()" calls the method in StoreHeader component class
+         That method emits @Output() clearCart event to the parent.
+
+         [disabled]="cartCount === 0" disables the button when cart is empty,
+         so user cannot clear when there's nothing to clear. -->
+    <button class="btn" (click)="onClear()" [disabled]="cartCount === 0">
+      Clear Cart
+    </button>
+  </div>
+</header>

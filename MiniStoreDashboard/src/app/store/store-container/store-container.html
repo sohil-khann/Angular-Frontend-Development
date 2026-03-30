@@ -1,0 +1,93 @@
+<div class="page">
+  <!-- CHILD COMPONENT: StoreHeader
+       Parent → Child communication:
+       - [cartCount] sends data from StoreContainer to StoreHeader using @Input()
+       Child → Parent communication:
+       - (clearCart) is an event emitted by StoreHeader using @Output()
+         When emitted, parent method onClearCart() will run -->
+  <app-store-header
+    [cartCount]="cartCount"
+    (clearCart)="onClearCart()">
+  </app-store-header>
+
+  <div class="layout">
+    <aside class="left">
+      <!-- CHILD COMPONENT: ProductFilter
+           Parent → Child:
+           - categories, selectedCategory, searchText are sent to filter using @Input()
+           Child → Parent:
+           - (filtersChanged) is emitted by ProductFilter using @Output()
+             It sends an object like { category, searchText } to the parent -->
+      <app-product-filter
+        [categories]="categories"
+        [selectedCategory]="selectedCategory"
+        [searchText]="searchText"
+        (filtersChanged)="onFiltersChanged($event)">
+      </app-product-filter>
+
+      <!-- QUICK VIEW PANEL (inside Parent template)
+           We are NOT using *ngIf. Instead we use [hidden] property binding.
+           - When selectedProduct is null -> [hidden]="true" -> panel is hidden
+           - When selectedProduct has a product -> [hidden]="false" -> panel is visible -->
+      <div class="details" [hidden]="!selectedProduct">
+
+        <div class="details-header">
+          <h3>Quick View</h3>
+
+          <!-- Close button
+               Calls the parent method closeDetails()
+               closeDetails() sets selectedProduct = null
+               and this panel becomes hidden again -->
+          <button class="btn-link" (click)="closeDetails()">✕</button>
+        </div>
+
+        <div class="details-body">
+          <!-- Safe navigation operator (?.)
+               Because selectedProduct can be null, we use ?. to avoid errors -->
+          <div class="name">{{ selectedProduct?.name }}</div>
+
+          <div class="meta">
+            <span class="pill">{{ selectedProduct?.category }}</span>
+            <span class="pill">⭐ {{ selectedProduct?.rating }}</span>
+          </div>
+
+          <div class="price">₹ {{ selectedProduct?.price }}</div>
+
+          <!-- Class binding
+               If selectedProduct is NOT in stock, then 'out' class is added
+               This helps us apply different styling for out-of-stock items -->
+          <div class="stock" [class.out]="!selectedProduct?.inStock">
+            <!-- Interpolation + conditional expression
+                 Displays In Stock / Out of Stock based on selectedProduct.inStock -->
+            {{ selectedProduct?.inStock ? 'In Stock' : 'Out of Stock' }}
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <!-- Top bar title for products section -->
+      <div class="topbar">
+        <div class="title">
+          <!-- filteredProducts is a getter in StoreContainer
+               filteredProducts.length changes automatically when filters change -->
+          Products <span class="count">({{ filteredProducts.length }})</span>
+        </div>
+      </div>
+
+      <!-- CHILD COMPONENT: ProductGrid
+           Parent → Child:
+           - [products] sends the filtered product list to the grid using @Input()
+           Child → Parent:
+           - (addToCart) is emitted by ProductGrid/ProductCard (Output event)
+             Parent handles it using onAddToCart($event)
+           - (viewDetails) is emitted by ProductGrid/ProductCard (Output event)
+             Parent handles it using onViewDetails($event), which sets selectedProduct -->
+      <app-product-grid
+        [products]="filteredProducts"
+        (addToCart)="onAddToCart($event)"
+        (viewDetails)="onViewDetails($event)">
+      </app-product-grid>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="card">
+  <!-- Top section: Product name + rating -->
+  <div class="top">
+    <!-- Display product name (product comes from parent via @Input()) -->
+    <div class="name">{{ product.name }}</div>
+
+    <!-- Display product rating -->
+    <div class="rating">⭐ {{ product.rating }}</div>
+  </div>
+
+  <!-- Meta section: Category + Stock status -->
+  <div class="meta">
+    <!-- Category tag -->
+    <span class="tag">{{ product.category }}</span>
+
+    <!-- Stock tag
+         [class.out]="!product.inStock" -> class binding
+         - If product is NOT in stock, 'out' class is added (for red styling)
+         - If in stock, 'out' class is not added
+
+         The text is shown using a conditional expression:
+         product.inStock ? 'In Stock' : 'Out of Stock' -->
+    <span class="tag" [class.out]="!product.inStock">
+      {{ product.inStock ? 'In Stock' : 'Out of Stock' }}
+    </span>
+  </div>
+
+  <!-- Bottom section: Price + Action buttons -->
+  <div class="bottom">
+    <!-- Display product price -->
+    <div class="price">₹ {{ product.price }}</div>
+
+    <div class="actions">
+      <!-- View button
+           (click)="viewNow()" calls the method in ProductCard TS.
+           That method emits @Output() view event and sends this product to parent. -->
+      <button class="btn light" (click)="viewNow()">View</button>
+
+      <!-- Add button
+           (click)="addToCart()" calls ProductCard TS method.
+           That method emits @Output() add event and sends this product to parent.
+
+           [disabled]="!product.inStock" disables Add button if product is out of stock,
+           so user cannot add unavailable products. -->
+      <button class="btn" (click)="addToCart()" [disabled]="!product.inStock">
+        Add
+      </button>
+    </div>
+  </div>
+</div>
