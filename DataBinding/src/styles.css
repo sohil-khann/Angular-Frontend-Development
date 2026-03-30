@@ -1,1 +1,160 @@
 /* You can add global styles to this file, and also import other style files */
+/* ------------------------------------------------------------
+   Page wrapper
+   Purpose:
+   - Provides a clean readable font for the page
+   - Adds spacing so content is not stuck to browser edges
+   ------------------------------------------------------------ */
+.page {
+  font-family: Arial, sans-serif; /* Simple readable font */
+  padding: 16px;                  /* Space around entire content */
+}
+
+/* ------------------------------------------------------------
+   Card container (Order Summary box)
+   Purpose:
+   - Creates a bordered "card" UI to group order details
+   - Keeps the width limited so it looks neat on large screens
+   ------------------------------------------------------------ */
+.card {
+  border: 1px solid #d0d0d0; /* Light border to separate card from background */
+  border-radius: 10px;         /* Rounded corners for a modern look */
+  padding: 14px;               /* Inner spacing so text doesn't touch border */
+  max-width: 720px;            /* Keeps UI readable (not full-width) */
+}
+
+/* ------------------------------------------------------------
+   Row spacing helper
+   Purpose:
+   - Adds vertical gap between blocks (like line items)
+   - Keeps HTML clean (no repeated <br> or extra margins inline)
+   ------------------------------------------------------------ */
+.row {
+  margin: 10px 0; /* Top & bottom spacing between sections */
+}
+
+/* ------------------------------------------------------------
+   Badge base (common style for all status labels)
+   Purpose:
+   - Creates a pill-shaped label used for Payment/Membership
+   - Individual states like .paid, .pending, .premium override colors
+   ------------------------------------------------------------ */
+.badge {
+  display: inline-block; /* Allows padding + border-radius to behave like a label */
+  padding: 4px 10px;     /* Controls badge size */
+  border-radius: 999px;  /* Large value => perfect pill shape */
+  font-size: 13px;       /* Slightly smaller than normal text */
+  margin-left: 6px;      /* Space after the title text: "Payment Status:" */
+}
+
+/* ------------------------------------------------------------
+   Payment status styles (used with Class Binding)
+   In HTML we do:
+   - [class.paid]="isPaymentDone"
+   - [class.pending]="!isPaymentDone"
+   Purpose:
+   - Paid should look successful (green)
+   - Pending should look warning-like (yellow)
+   ------------------------------------------------------------ */
+.paid {
+  background: #1c7c1c; /* Green background means success */
+  color: #fff;         /* White text for contrast */
+}
+
+.pending {
+  background: #ffcc00; /* Yellow indicates pending/warning */
+  color: #222;         /* Dark text improves readability on yellow */
+}
+
+/* ------------------------------------------------------------
+   Membership styles (used with Class Binding)
+   In HTML we do:
+   - [class.premium]="isPremiumCustomer"
+   - [class.regular]="!isPremiumCustomer"
+   Purpose:
+   - Premium has a stronger highlight (blue)
+   - Regular stays neutral (gray)
+   ------------------------------------------------------------ */
+.premium {
+  background: #0057d8; /* Blue indicates premium / special access */
+  color: #fff;
+}
+
+.regular {
+  background: #6c757d; /* Gray indicates regular/normal membership */
+  color: #fff;
+}
+
+/* ------------------------------------------------------------
+   Low stock highlight (used with Class Binding)
+   In HTML we do:
+   - [class.low-stock]="stockLeft <= 5"
+   Purpose:
+   - When stock is low, show the number in bold red to catch attention
+   ------------------------------------------------------------ */
+.low-stock {
+  color: #d10000;    /* Red means urgency / warning */
+  font-weight: bold;   /* Bold makes stock count stand out */
+}
+
+/* ------------------------------------------------------------
+   Button styling (small cleanup)
+   Purpose:
+   - Adds consistent padding so buttons look clickable and neat
+   - cursor:pointer gives hand icon (UX improvement)
+   ------------------------------------------------------------ */
+button {
+  padding: 6px 10px; /* Makes button size comfortable to click */
+  cursor: pointer;   /* Hand cursor indicates clickable action */
+}
+
+/* ------------------------------------------------------------
+   Input and dropdown styling
+   Purpose:
+   - Adds padding so input/select fields look clean and readable
+   ------------------------------------------------------------ */
+input,
+select {
+  padding: 6px; /* Comfortable spacing inside form controls */
+}
+
+/* ------------------------------------------------------------
+   Progress bar container
+   Purpose:
+   - Creates the outer progress bar "track"
+   - overflow:hidden ensures inner fill stays inside rounded corners
+   ------------------------------------------------------------ */
+.progress-box {
+  border: 1px solid #ccc;   /* Outer boundary of progress track */
+  border-radius: 8px;         /* Rounded corners for modern bar */
+  height: 14px;               /* Bar height */
+  width: 260px;               /* Fixed width for demo */
+  overflow: hidden;           /* Keeps fill clipped inside rounded border */
+  display: inline-block;      /* Allows bar to sit next to text */
+  vertical-align: middle;     /* Aligns bar properly with label text */
+  margin-left: 8px;           /* Space after the "35%" text */
+}
+
+/* ------------------------------------------------------------
+   Progress fill (width is controlled by Style Binding)
+   In HTML we do:
+   - [style.width.%]="deliveryProgressPercent"
+   Purpose:
+   - Shows the completed portion of the progress bar
+   ------------------------------------------------------------ */
+.progress-fill {
+  display: block;          /* Required so width% actually affects the element */
+  height: 100%;            /* Fills the height of .progress-box */
+  background: #0057d8;   /* Blue fill to represent progress */
+}
+
+/* ------------------------------------------------------------
+   UI message (feedback area)
+   Purpose:
+   - Shows success/errors after events like click/apply coupon/payment
+   - Bold makes the message clearly visible to the user
+   ------------------------------------------------------------ */
+.message {
+  margin-top: 12px;   /* Space before message area */
+  font-weight: bold;  /* Emphasizes the feedback message */
+}
