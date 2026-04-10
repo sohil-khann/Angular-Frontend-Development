@@ -1,0 +1,689 @@
+2026-03-18 10:44:51.551 +05:30 [INF] HTTP GET /swagger responded 301 in 8.2598 ms
+2026-03-18 10:44:51.785 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 123.9067 ms
+2026-03-18 10:44:51.849 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 54.3894 ms
+2026-03-18 10:44:51.852 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 57.6328 ms
+2026-03-18 10:44:51.917 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 122.3187 ms
+2026-03-18 10:44:52.362 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.5012 ms
+2026-03-18 10:44:52.378 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 30.2452 ms
+2026-03-18 10:53:59.529 +05:30 [INF] HTTP GET /swagger responded 301 in 5.5132 ms
+2026-03-18 10:53:59.706 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 113.5247 ms
+2026-03-18 10:53:59.799 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 73.7833 ms
+2026-03-18 10:53:59.799 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 73.0302 ms
+2026-03-18 10:53:59.825 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 98.4736 ms
+2026-03-18 10:54:00.023 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.5233 ms
+2026-03-18 10:54:00.024 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.5716 ms
+2026-03-18 10:55:15.557 +05:30 [INF] Fake email sent to don@don.com. Subject: Verify your email. Body: Verification token: 423a393b-bf5d-49a4-b103-4bb5f7acdcb8
+2026-03-18 10:55:15.722 +05:30 [INF] User don@don.com signed in.
+2026-03-18 10:55:15.745 +05:30 [INF] HTTP POST /api/auth/register responded 200 in 2277.8674 ms
+2026-03-18 10:56:55.699 +05:30 [INF] HTTP GET /api/auth/verify-email responded 400 in 134.1647 ms
+2026-03-18 10:57:11.609 +05:30 [INF] HTTP GET /api/auth/verify-email responded 400 in 26.3195 ms
+2026-03-18 10:57:50.848 +05:30 [INF] Fake email sent to don@don.com. Subject: Verify your email. Body: Verification token: 6ad08b45-218b-4a2a-8b41-3156a2b062a3
+2026-03-18 10:57:50.852 +05:30 [INF] HTTP POST /api/auth/resend-verification responded 200 in 88.4812 ms
+2026-03-18 10:59:12.351 +05:30 [INF] HTTP GET /api/auth/verify-email responded 400 in 16.0955 ms
+2026-03-18 11:00:06.817 +05:30 [INF] User don@don.com signed in.
+2026-03-18 11:00:06.821 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 455.5311 ms
+2026-03-18 11:01:32.333 +05:30 [INF] HTTP GET /api/sessions responded 200 in 512.2154 ms
+2026-03-18 11:03:43.830 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:03:43.904 +05:30 [INF] HTTP POST /api/notes responded 200 in 433.2624 ms
+2026-03-18 11:04:26.287 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:04:26.342 +05:30 [INF] HTTP GET /api/notes responded 200 in 153.1697 ms
+2026-03-18 11:04:48.750 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:04:48.884 +05:30 [INF] HTTP GET /api/notes responded 200 in 210.7197 ms
+2026-03-18 11:05:15.842 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:05:15.917 +05:30 [INF] HTTP GET /api/notes responded 200 in 140.6189 ms
+2026-03-18 11:06:47.636 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:06:47.691 +05:30 [INF] HTTP GET /api/notes/0 responded 404 in 121.7800 ms
+2026-03-18 11:06:54.846 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 15.6257 ms
+2026-03-18 11:07:14.149 +05:30 [INF] HTTP GET /api/notes responded 200 in 70.9972 ms
+2026-03-18 11:08:18.653 +05:30 [INF] HTTP PATCH /api/notes/1/archive responded 200 in 56.1471 ms
+2026-03-18 11:08:34.788 +05:30 [INF] HTTP PATCH /api/notes/1/archive responded 200 in 21.9912 ms
+2026-03-18 11:08:45.979 +05:30 [INF] HTTP PATCH /api/notes/1/archive responded 200 in 16.0251 ms
+2026-03-18 11:08:48.364 +05:30 [INF] HTTP PATCH /api/notes/1/archive responded 200 in 18.4038 ms
+2026-03-18 11:09:05.285 +05:30 [INF] HTTP POST /api/notes/1/restore responded 200 in 55.0063 ms
+2026-03-18 11:10:07.955 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 70.3681 ms
+2026-03-18 11:10:14.056 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 13.6355 ms
+2026-03-18 11:10:55.192 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:10:55.262 +05:30 [INF] HTTP GET /api/notes responded 200 in 108.0327 ms
+2026-03-18 11:12:00.877 +05:30 [INF] HTTP GET /api/labels responded 200 in 73.0279 ms
+2026-03-18 11:12:23.337 +05:30 [INF] HTTP POST /api/labels responded 200 in 62.9906 ms
+2026-03-18 11:12:37.351 +05:30 [INF] HTTP GET /api/labels responded 200 in 71.5657 ms
+2026-03-18 11:12:56.259 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 11:12:56.336 +05:30 [INF] HTTP GET /api/labels/1/notes responded 200 in 114.1888 ms
+2026-03-18 11:13:19.775 +05:30 [INF] HTTP GET /api/labels/1 responded 200 in 50.2923 ms
+2026-03-18 11:13:30.438 +05:30 [INF] HTTP GET /api/labels/1/notes responded 200 in 135.4351 ms
+2026-03-18 11:13:35.490 +05:30 [INF] HTTP GET /api/labels/2/notes responded 200 in 7.0004 ms
+2026-03-18 11:13:38.463 +05:30 [INF] HTTP GET /api/labels/0/notes responded 200 in 8.5418 ms
+2026-03-18 11:13:42.402 +05:30 [INF] HTTP GET /api/labels/1/notes responded 200 in 7.9669 ms
+2026-03-18 11:14:05.991 +05:30 [INF] HTTP GET /api/notes responded 200 in 95.1523 ms
+2026-03-18 11:14:17.054 +05:30 [INF] HTTP GET /api/notes responded 200 in 85.8767 ms
+2026-03-18 11:15:12.286 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 21.7662 ms
+2026-03-18 11:15:12.715 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.3746 ms
+2026-03-18 11:15:18.939 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 2.6281 ms
+2026-03-18 11:15:19.181 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.6012 ms
+2026-03-18 11:15:59.287 +05:30 [INF] User don@don.com signed in.
+2026-03-18 11:15:59.290 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 429.4376 ms
+2026-03-18 11:17:00.109 +05:30 [INF] Fake email sent to user@example.com. Subject: Fundoo collaboration invite. Body: string
+2026-03-18 11:17:00.121 +05:30 [INF] HTTP POST /api/notes/1/collaborators/invite responded 200 in 151.8333 ms
+2026-03-18 11:17:31.615 +05:30 [INF] HTTP GET /api/notes/collaborators/invitations/pending responded 200 in 85.5140 ms
+2026-03-18 11:17:56.877 +05:30 [INF] HTTP POST /api/notes/1/collaborators/invite responded 400 in 79.1085 ms
+2026-03-18 11:18:08.129 +05:30 [INF] HTTP POST /api/notes/collaborators/invitations/1/accept responded 400 in 33.8117 ms
+2026-03-18 11:19:07.180 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 204 in 83.1311 ms
+2026-03-18 11:19:20.450 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 404 in 9.9581 ms
+2026-03-18 11:19:29.635 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Fundoo.Data.FundooDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7120eae1-7b8a-4407-9b97-6fcf387c716e
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7120eae1-7b8a-4407-9b97-6fcf387c716e
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 11:19:29.847 +05:30 [ERR] HTTP POST /api/notes/1/collaborators/invite responded 500 in 310.8514 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7120eae1-7b8a-4407-9b97-6fcf387c716e
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-03-18 11:19:29.988 +05:30 [ERR] Unhandled exception caught.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7120eae1-7b8a-4407-9b97-6fcf387c716e
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Fundoo.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Acess meditech\Demo\Fundoo\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 12:08:24.567 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 272.7124 ms
+2026-03-18 12:08:24.912 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 47.5991 ms
+2026-03-18 12:09:07.290 +05:30 [INF] User don@don.com signed in.
+2026-03-18 12:09:07.307 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1362.2700 ms
+2026-03-18 12:09:32.775 +05:30 [INF] HTTP GET /api/labels responded 200 in 413.2122 ms
+2026-03-18 12:10:03.435 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:10:03.499 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 151.1527 ms
+2026-03-18 12:10:15.721 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:10:15.755 +05:30 [INF] HTTP GET /api/notes responded 200 in 72.1391 ms
+2026-03-18 12:12:35.592 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 3.1079 ms
+2026-03-18 12:12:35.685 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.6483 ms
+2026-03-18 12:13:11.369 +05:30 [INF] User don@don.com signed in.
+2026-03-18 12:13:11.371 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 257.8823 ms
+2026-03-18 12:13:51.650 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:13:51.684 +05:30 [INF] HTTP GET /api/notes responded 200 in 78.6733 ms
+2026-03-18 12:13:59.359 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:13:59.383 +05:30 [INF] HTTP GET /api/notes responded 200 in 42.9490 ms
+2026-03-18 12:14:14.458 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:14:14.481 +05:30 [INF] HTTP GET /api/notes responded 200 in 41.1845 ms
+2026-03-18 12:14:17.850 +05:30 [INF] HTTP GET /api/notes responded 200 in 6.5130 ms
+2026-03-18 12:14:24.943 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 12:14:24.967 +05:30 [INF] HTTP GET /api/notes responded 200 in 42.0979 ms
+2026-03-18 12:14:38.094 +05:30 [INF] HTTP GET /api/labels responded 200 in 12.8463 ms
+2026-03-18 12:14:49.357 +05:30 [INF] HTTP GET /api/notes responded 200 in 7.4213 ms
+2026-03-18 12:14:53.459 +05:30 [INF] HTTP GET /api/notes responded 200 in 10.8627 ms
+2026-03-18 12:15:07.442 +05:30 [INF] HTTP GET /api/sessions responded 200 in 33.3894 ms
+2026-03-18 12:21:54.621 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 71.1809 ms
+2026-03-18 12:21:54.746 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.3708 ms
+2026-03-18 12:22:30.716 +05:30 [INF] User don@don.com signed in.
+2026-03-18 12:22:30.734 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1248.0703 ms
+2026-03-18 12:22:56.249 +05:30 [INF] HTTP GET /api/sessions responded 200 in 271.4129 ms
+2026-03-18 12:25:00.098 +05:30 [INF] HTTP POST /api/auth/logout responded 200 in 41.5380 ms
+2026-03-18 12:25:17.513 +05:30 [INF] HTTP GET /api/sessions responded 200 in 13.7942 ms
+2026-03-18 12:25:19.319 +05:30 [INF] HTTP GET /api/sessions responded 200 in 6.0243 ms
+2026-03-18 12:25:47.252 +05:30 [INF] HTTP GET /api/labels responded 401 in 11.6333 ms
+2026-03-18 12:25:56.676 +05:30 [INF] User don@don.com signed in.
+2026-03-18 12:25:56.677 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 251.4089 ms
+2026-03-18 12:26:21.431 +05:30 [INF] HTTP GET /api/sessions responded 200 in 9.8094 ms
+2026-03-18 12:26:36.722 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 13.1926 ms
+2026-03-18 12:26:36.827 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.9360 ms
+2026-03-18 12:26:54.539 +05:30 [INF] HTTP GET /api/sessions responded 200 in 5.0430 ms
+2026-03-18 12:27:05.713 +05:30 [INF] HTTP GET /api/labels responded 200 in 88.6919 ms
+2026-03-18 15:34:31.230 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 119.4983 ms
+2026-03-18 15:34:32.250 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.4331 ms
+2026-03-18 15:38:25.146 +05:30 [INF] User don@don.com signed in.
+2026-03-18 15:38:25.176 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2207.9613 ms
+2026-03-18 15:39:11.631 +05:30 [INF] HTTP GET /api/notes responded 401 in 94.3162 ms
+2026-03-18 15:39:20.023 +05:30 [INF] HTTP GET /api/notes responded 401 in 7.5071 ms
+2026-03-18 15:39:20.628 +05:30 [INF] HTTP GET /api/notes responded 401 in 2.4614 ms
+2026-03-18 15:39:28.524 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.5185 ms
+2026-03-18 15:39:34.022 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.0613 ms
+2026-03-18 15:39:50.033 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.4122 ms
+2026-03-18 15:39:51.885 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.3715 ms
+2026-03-18 15:40:00.585 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.3498 ms
+2026-03-18 15:40:04.052 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.1433 ms
+2026-03-18 15:40:04.967 +05:30 [INF] HTTP GET /api/notes responded 401 in 1.2304 ms
+2026-03-18 15:40:32.358 +05:30 [INF] HTTP POST /api/notes responded 401 in 11.3216 ms
+2026-03-18 15:41:07.803 +05:30 [INF] HTTP POST /api/notes responded 401 in 11.0251 ms
+2026-03-18 15:41:10.464 +05:30 [INF] HTTP POST /api/notes responded 401 in 1.0477 ms
+2026-03-18 15:41:47.010 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 121.4340 ms
+2026-03-18 15:41:48.043 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 30.0939 ms
+2026-03-18 15:42:24.062 +05:30 [INF] User don@don.com signed in.
+2026-03-18 15:42:24.099 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2009.7222 ms
+2026-03-18 15:43:10.178 +05:30 [INF] HTTP GET /api/notes responded 401 in 123.3927 ms
+2026-03-18 15:43:22.419 +05:30 [INF] HTTP POST /api/notes responded 401 in 5.3046 ms
+2026-03-18 15:44:17.178 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:44:17.544 +05:30 [INF] HTTP POST /api/notes responded 200 in 878.9519 ms
+2026-03-18 15:44:23.257 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:44:23.326 +05:30 [INF] HTTP GET /api/notes responded 200 in 154.5867 ms
+2026-03-18 15:44:27.563 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:44:27.613 +05:30 [INF] HTTP GET /api/notes responded 200 in 98.8695 ms
+2026-03-18 15:44:42.392 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:44:42.449 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 125.3215 ms
+2026-03-18 15:45:41.829 +05:30 [INF] HTTP PUT /api/notes/2 responded 200 in 90.9873 ms
+2026-03-18 15:45:55.728 +05:30 [INF] HTTP GET /api/notes/2 responded 200 in 63.7360 ms
+2026-03-18 15:46:13.052 +05:30 [INF] HTTP DELETE /api/notes/2 responded 204 in 76.7002 ms
+2026-03-18 15:46:36.350 +05:30 [INF] HTTP GET /api/notes/2 responded 200 in 98.5475 ms
+2026-03-18 15:46:42.251 +05:30 [INF] HTTP DELETE /api/notes/2 responded 204 in 66.1391 ms
+2026-03-18 15:54:09.604 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 121.9872 ms
+2026-03-18 15:54:10.558 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.7639 ms
+2026-03-18 15:54:35.821 +05:30 [INF] User don@don.com signed in.
+2026-03-18 15:54:35.852 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1985.9927 ms
+2026-03-18 15:55:00.807 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:55:00.925 +05:30 [INF] HTTP GET /api/notes responded 200 in 727.6214 ms
+2026-03-18 15:55:11.553 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 15:55:11.632 +05:30 [INF] HTTP DELETE /api/notes/2 responded 204 in 137.5535 ms
+2026-03-18 15:59:42.124 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 97.2782 ms
+2026-03-18 15:59:43.083 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.4020 ms
+2026-03-18 16:00:09.142 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:00:09.166 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2083.6585 ms
+2026-03-18 16:00:36.740 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:00:36.876 +05:30 [INF] HTTP GET /api/notes/2 responded 200 in 844.2590 ms
+2026-03-18 16:00:48.183 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:00:48.253 +05:30 [INF] HTTP DELETE /api/notes/2 responded 200 in 127.5150 ms
+2026-03-18 16:01:07.704 +05:30 [INF] HTTP GET /api/notes/2 responded 200 in 138.6311 ms
+2026-03-18 16:02:23.184 +05:30 [INF] HTTP GET /api/notes/2 responded 200 in 46.0787 ms
+2026-03-18 16:02:51.201 +05:30 [INF] HTTP POST /api/notes responded 200 in 133.9711 ms
+2026-03-18 16:03:07.020 +05:30 [INF] HTTP DELETE /api/notes/3 responded 200 in 43.0191 ms
+2026-03-18 16:03:19.950 +05:30 [INF] HTTP GET /api/notes/3 responded 200 in 64.0945 ms
+2026-03-18 16:03:31.541 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:03:31.615 +05:30 [INF] HTTP DELETE /api/notes/trash/empty responded 204 in 136.6370 ms
+2026-03-18 16:04:44.814 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 28.7027 ms
+2026-03-18 16:04:55.558 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 101.7835 ms
+2026-03-18 16:04:56.504 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 27.0113 ms
+2026-03-18 16:05:18.392 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:05:18.420 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1978.0960 ms
+2026-03-18 16:05:38.083 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:05:38.381 +05:30 [INF] HTTP DELETE /api/notes/trash/empty responded 200 in 673.8166 ms
+2026-03-18 16:05:55.995 +05:30 [INF] HTTP GET /api/notes/3 responded 200 in 100.6795 ms
+2026-03-18 16:19:54.673 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 106.0656 ms
+2026-03-18 16:19:55.596 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.1014 ms
+2026-03-18 16:20:20.150 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:20:20.176 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2100.0168 ms
+2026-03-18 16:20:51.077 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:20:51.154 +05:30 [INF] HTTP GET /api/notes/3 responded 404 in 698.8237 ms
+2026-03-18 16:21:01.478 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:21:01.579 +05:30 [INF] HTTP DELETE /api/notes/2 responded 200 in 153.2918 ms
+2026-03-18 16:21:30.846 +05:30 [INF] HTTP PATCH /api/notes/2/trash responded 200 in 90.1244 ms
+2026-03-18 16:21:43.368 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:21:43.451 +05:30 [INF] HTTP DELETE /api/notes/trash/empty/2 responded 200 in 131.7756 ms
+2026-03-18 16:21:59.658 +05:30 [INF] HTTP GET /api/notes/2 responded 404 in 114.1044 ms
+2026-03-18 16:30:32.616 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 103.1954 ms
+2026-03-18 16:31:44.115 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Fundoo.Data.FundooDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 16:31:44.307 +05:30 [ERR] HTTP POST /api/notes/1/collaborators/invite responded 500 in 383.3386 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-03-18 16:31:44.422 +05:30 [ERR] Unhandled exception caught.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Fundoo.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Acess meditech\Demo\Fundoo\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 16:32:08.374 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Fundoo.Data.FundooDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 16:32:08.508 +05:30 [ERR] HTTP POST /api/notes/1/collaborators/invite responded 500 in 161.3666 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-03-18 16:32:08.586 +05:30 [ERR] Unhandled exception caught.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.NoteCollaborators' with unique index 'IX_NoteCollaborators_NoteId_CollaboratorEmail'. The duplicate key value is (1, user@example.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4919826a-5385-46ab-92a1-a3c69181cfdd
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Fundoo.Repositories.CollaboratorRepository.SaveChangesAsync() in D:\Acess meditech\Demo\Fundoo\Repositories\CollaboratorRepository.cs:line 51
+   at Fundoo.Services.CollaboratorService.InviteAsync(Int32 noteId, Int32 userId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Services\CollaboratorService.cs:line 65
+   at Fundoo.Controllers.CollaboratorsController.Invite(Int32 noteId, InviteCollaboratorDto dto) in D:\Acess meditech\Demo\Fundoo\Controllers\CollaboratorsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Fundoo.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Acess meditech\Demo\Fundoo\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 16:32:21.191 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 10.2995 ms
+2026-03-18 16:35:54.645 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 104.1434 ms
+2026-03-18 16:35:55.577 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 21.6158 ms
+2026-03-18 16:37:07.168 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 7.8502 ms
+2026-03-18 16:37:08.460 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 28.0796 ms
+2026-03-18 16:37:43.326 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:37:43.350 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1907.3760 ms
+2026-03-18 16:38:11.473 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:38:11.584 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 437.5893 ms
+2026-03-18 16:47:44.225 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 108.6435 ms
+2026-03-18 16:47:45.194 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 24.1276 ms
+2026-03-18 16:48:20.722 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:48:20.748 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2118.6018 ms
+2026-03-18 16:48:47.118 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:48:47.250 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 507.0743 ms
+2026-03-18 16:49:53.996 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 9.9986 ms
+2026-03-18 16:49:54.931 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.5781 ms
+2026-03-18 16:50:23.929 +05:30 [INF] HTTP GET /api/notes/1 responded 401 in 33.6526 ms
+2026-03-18 16:50:51.149 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:50:51.155 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 476.6089 ms
+2026-03-18 16:51:10.981 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:51:11.080 +05:30 [INF] HTTP GET /api/notes/1 responded 200 in 451.7328 ms
+2026-03-18 16:52:03.152 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 109.2788 ms
+2026-03-18 16:52:04.239 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 24.8580 ms
+2026-03-18 16:52:31.904 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:52:31.935 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2136.6839 ms
+2026-03-18 16:52:57.028 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:52:57.162 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 463.8503 ms
+2026-03-18 16:54:26.874 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 404 in 133.5929 ms
+2026-03-18 16:55:56.819 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 101.7204 ms
+2026-03-18 16:55:57.965 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.1130 ms
+2026-03-18 16:56:22.698 +05:30 [INF] User don@don.com signed in.
+2026-03-18 16:56:22.726 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2210.6138 ms
+2026-03-18 16:56:43.831 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-03-18 16:56:43.949 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 404 in 489.9209 ms
+2026-03-18 16:56:57.813 +05:30 [INF] HTTP GET /api/notes/collaborators/invitations/pending responded 200 in 70.8035 ms
+2026-03-18 16:58:55.959 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 10.3681 ms
+2026-03-18 16:58:56.937 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.9376 ms
+2026-03-18 16:59:05.744 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 2.1945 ms
+2026-03-18 16:59:06.136 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.4686 ms
+2026-03-18 16:59:20.953 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 401 in 9.1169 ms
+2026-03-18 16:59:34.739 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 401 in 0.9853 ms
+2026-03-18 17:00:03.023 +05:30 [INF] User don@don.com signed in.
+2026-03-18 17:00:03.029 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 489.1560 ms
+2026-03-18 17:00:19.533 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 136.6180 ms
+2026-03-18 17:00:24.293 +05:30 [INF] HTTP DELETE /api/notes/1/collaborators/1 responded 200 in 75.4518 ms
+2026-03-18 17:00:31.753 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 8.7447 ms
+2026-03-18 17:00:34.301 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 11.3195 ms
+2026-03-18 17:00:35.296 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 13.1879 ms
+2026-03-18 17:00:36.022 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 11.1658 ms
+2026-03-18 17:00:36.803 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 10.0677 ms
+2026-03-18 17:00:37.554 +05:30 [INF] HTTP GET /api/notes/1/collaborators responded 200 in 10.5523 ms

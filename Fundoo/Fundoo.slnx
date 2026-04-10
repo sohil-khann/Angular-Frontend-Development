@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Fundoo.csproj" />
+  <Project Path="Fundoo.Tests\Fundoo.Tests.csproj" />
+</Solution>

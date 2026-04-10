@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Serilog.Enrichers.CorrelationId</id>
+    <version>3.0.1</version>
+    <title>Serilog.Enrichers.CorrelationId</title>
+    <authors>mrstebo, ekmsystems</authors>
+    <owners>mrstebo, ekmsystems</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ekmsystems/serilog-enrichers-correlation-id/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ekmsystems/serilog-enrichers-correlation-id</projectUrl>
+    <description>Enrich logs with a unique ID so you can track logs for specific requests.</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags>serilog enrichers enricher correlationid correlation id</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Serilog" version="2.4.0" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.Http" version="2.1.1" />
+        <dependency id="Serilog" version="2.7.1" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" />
+        <dependency id="Serilog" version="2.9.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

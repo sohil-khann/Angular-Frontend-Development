@@ -1,0 +1,40 @@
+2026-03-17 12:32:40.612 +05:30 [INF] HTTP GET /swagger responded 301 in 4.8940 ms
+2026-03-17 12:32:40.743 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 72.8404 ms
+2026-03-17 12:32:40.808 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 47.1846 ms
+2026-03-17 12:32:40.808 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 47.1783 ms
+2026-03-17 12:32:40.851 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 90.7328 ms
+2026-03-17 12:32:41.856 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.5172 ms
+2026-03-17 12:32:41.906 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.4025 ms
+2026-03-17 12:33:36.793 +05:30 [INF] Fake email sent to user@example.com. Subject: Verify your email. Body: Verification token: 01268b64-7c40-4800-9d9f-22b756c1514a
+2026-03-17 12:33:36.892 +05:30 [INF] User user@example.com signed in.
+2026-03-17 12:33:36.906 +05:30 [INF] HTTP POST /api/auth/register responded 200 in 1274.6918 ms
+2026-03-17 12:33:50.810 +05:30 [INF] User user@example.com signed in.
+2026-03-17 12:33:50.811 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 313.8773 ms
+2026-03-17 12:34:04.576 +05:30 [INF] HTTP GET /api/sessions responded 401 in 15.6397 ms
+2026-03-17 12:34:41.207 +05:30 [INF] Fake email sent to user@example.com. Subject: Reset password. Body: Password reset token: b2679874-8eac-43a5-91eb-f425fafa9c96
+2026-03-17 12:34:41.212 +05:30 [INF] HTTP POST /api/auth/forgot-password responded 200 in 43.8134 ms
+2026-03-17 12:35:36.606 +05:30 [INF] HTTP POST /api/auth/reset-password responded 400 in 58.5731 ms
+2026-03-17 12:36:15.044 +05:30 [INF] HTTP POST /api/auth/reset-password responded 400 in 10.8247 ms
+2026-03-17 12:37:38.137 +05:30 [INF] HTTP POST /api/notes responded 401 in 10.1591 ms
+2026-03-17 12:39:09.314 +05:30 [INF] HTTP GET /api/notes responded 401 in 5.4049 ms
+2026-03-17 14:35:48.199 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 111.1987 ms
+2026-03-17 14:35:49.210 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.1685 ms
+2026-03-17 14:36:06.608 +05:30 [INF] User user@example.com signed in.
+2026-03-17 14:36:06.638 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 2158.3763 ms
+2026-03-17 14:36:35.990 +05:30 [INF] HTTP GET /api/auth/verify-email responded 400 in 163.4298 ms
+2026-03-17 14:37:45.693 +05:30 [INF] HTTP POST /api/notes responded 401 in 34.0366 ms
+2026-03-17 14:38:19.021 +05:30 [INF] HTTP GET /api/sessions responded 401 in 32.7513 ms
+2026-03-17 14:38:40.037 +05:30 [INF] HTTP DELETE /api/sessions/terminate-all responded 401 in 13.1137 ms
+2026-03-17 14:46:31.130 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 112.6407 ms
+2026-03-17 14:46:32.147 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.5969 ms
+2026-03-17 14:46:48.273 +05:30 [INF] HTTP GET /api/auth/verify-email responded 200 in 1174.7940 ms
+2026-03-17 14:47:04.684 +05:30 [INF] User user@example.com signed in.
+2026-03-17 14:47:04.699 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 1137.2445 ms
+2026-03-17 14:48:07.720 +05:30 [INF] HTTP POST /api/auth/refresh-token responded 200 in 90.4794 ms
+2026-03-17 14:51:59.815 +05:30 [INF] HTTP GET /api/sessions responded 401 in 46.7320 ms
+2026-03-17 15:00:13.460 +05:30 [INF] User user@example.com signed in.
+2026-03-17 15:00:13.465 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 728.1982 ms
+2026-03-17 15:00:57.483 +05:30 [INF] User user@example.com signed in.
+2026-03-17 15:00:57.488 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 692.0156 ms
+2026-03-17 15:02:15.166 +05:30 [INF] HTTP GET /api/sessions responded 200 in 742.7869 ms
+2026-03-17 15:02:55.252 +05:30 [INF] HTTP GET /api/sessions responded 200 in 74.7420 ms

@@ -1,0 +1,47 @@
+2026-04-01 10:43:41.419 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 214.3339 ms
+2026-04-01 10:43:42.892 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 36.4742 ms
+2026-04-01 12:27:59.245 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 283.1054 ms
+2026-04-01 12:28:00.684 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 41.5606 ms
+2026-04-01 12:29:14.693 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 4.6555 ms
+2026-04-01 12:29:15.238 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 537.1130 ms
+2026-04-01 12:37:44.060 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 20.5049 ms
+2026-04-01 12:37:45.642 +05:30 [INF] Fake email sent to sai@sai.com. Subject: Verify your email. Body: Verification token: d98019a7-19b3-4720-937e-805022e60034
+2026-04-01 12:37:45.815 +05:30 [INF] User sai@sai.com signed in.
+2026-04-01 12:37:45.836 +05:30 [INF] HTTP POST /api/auth/register responded 200 in 1749.2850 ms
+2026-04-01 12:46:47.359 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.3405 ms
+2026-04-01 12:46:47.515 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 147.6924 ms
+2026-04-01 12:49:19.993 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.6304 ms
+2026-04-01 12:49:20.009 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 8.6290 ms
+2026-04-01 15:56:51.223 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 128.8355 ms
+2026-04-01 15:56:51.639 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.8691 ms
+2026-04-01 15:59:50.435 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 3.8636 ms
+2026-04-01 15:59:51.085 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 640.1414 ms
+2026-04-01 16:01:18.790 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 1.3723 ms
+2026-04-01 16:01:18.859 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 60.1351 ms
+2026-04-01 16:02:24.453 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.1094 ms
+2026-04-01 16:02:29.188 +05:30 [INF] Email sent to sohilkhann164@gmail.com. Subject: Verify your Fundoo email
+2026-04-01 16:02:29.317 +05:30 [INF] User sohilkhann164@gmail.com signed in.
+2026-04-01 16:02:29.327 +05:30 [INF] HTTP POST /api/auth/register responded 200 in 4863.9208 ms
+2026-04-01 16:04:36.559 +05:30 [INF] HTTP OPTIONS /api/auth/logout responded 204 in 0.1876 ms
+2026-04-01 16:04:36.682 +05:30 [INF] HTTP POST /api/auth/logout responded 200 in 114.5564 ms
+2026-04-01 16:05:20.610 +05:30 [INF] HTTP OPTIONS /api/auth/forgot-password responded 204 in 0.1703 ms
+2026-04-01 16:05:24.451 +05:30 [INF] Email sent to sohilkhann164@gmail.com. Subject: Reset your Fundoo password
+2026-04-01 16:05:24.454 +05:30 [INF] HTTP POST /api/auth/forgot-password responded 200 in 3833.8253 ms
+2026-04-01 16:07:25.083 +05:30 [INF] HTTP OPTIONS /api/auth/reset-password responded 204 in 0.1677 ms
+2026-04-01 16:07:25.412 +05:30 [INF] HTTP POST /api/auth/reset-password responded 200 in 315.7552 ms
+2026-04-01 16:16:39.404 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.5381 ms
+2026-04-01 16:16:39.818 +05:30 [INF] User sohilkhann164@gmail.com signed in.
+2026-04-01 16:16:39.821 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 403.0930 ms
+2026-04-01 16:16:50.915 +05:30 [INF] HTTP OPTIONS /api/auth/logout responded 204 in 0.1396 ms
+2026-04-01 16:16:50.939 +05:30 [INF] HTTP POST /api/auth/logout responded 200 in 17.5843 ms
+2026-04-01 16:17:06.529 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.3452 ms
+2026-04-01 16:17:06.878 +05:30 [INF] HTTP POST /api/auth/login responded 400 in 342.9699 ms
+2026-04-01 16:17:49.811 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.2421 ms
+2026-04-01 16:17:50.196 +05:30 [INF] HTTP POST /api/auth/login responded 400 in 368.4624 ms
+2026-04-01 16:17:58.782 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.1271 ms
+2026-04-01 16:17:59.135 +05:30 [INF] User sohilkhann164@gmail.com signed in.
+2026-04-01 16:17:59.138 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 348.3322 ms
+2026-04-01 16:18:42.818 +05:30 [INF] HTTP OPTIONS /api/auth/change-password responded 204 in 1.0061 ms
+2026-04-01 16:18:43.502 +05:30 [INF] HTTP POST /api/auth/change-password responded 200 in 670.2064 ms
+2026-04-01 16:19:21.358 +05:30 [INF] HTTP OPTIONS /api/auth/logout responded 204 in 1.0721 ms
+2026-04-01 16:19:21.390 +05:30 [INF] HTTP POST /api/auth/logout responded 200 in 17.4161 ms
