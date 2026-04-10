@@ -1,0 +1,57 @@
+.notes-board {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.notes-board__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.notes-board__header h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.notes-board__header p {
+  margin: 0.35rem 0 0;
+  color: var(--fundoo-text-soft);
+}
+
+.notes-board__placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 16rem;
+  color: var(--fundoo-text-soft);
+  border: 1px dashed var(--fundoo-border);
+  border-radius: 1.2rem;
+}
+
+.notes-board__section {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.notes-board__section-title {
+  margin: 0;
+  color: var(--fundoo-text-soft);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.notes-board__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 720px) {
+  .notes-board__header {
+    flex-direction: column;
+  }
+}

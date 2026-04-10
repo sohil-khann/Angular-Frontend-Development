@@ -1,0 +1,33 @@
+<section class="keep-shell">
+  <app-keep-header
+    [searchText]="searchText"
+    [currentUserName]="displayName"
+    [currentUserEmail]="emailAddress"
+    [isEmailVerified]="isEmailVerified"
+    [isWorking]="isWorking"
+    (searchTextChange)="onSearchTextChange($event)"
+    (menuToggleRequested)="toggleSidebar()"
+    (refreshSessionRequested)="refreshSession()"
+    (resendVerificationRequested)="resendVerification()"
+    (logoutRequested)="logout()"
+    (logoutAllRequested)="logout(true)"
+  ></app-keep-header>
+
+  <div class="keep-shell__body" [class.keep-shell__body--sidebar-closed]="!sidebarOpen">
+    @if (sidebarOpen) {
+      <app-keep-sidebar [labels]="labels$ | async"></app-keep-sidebar>
+    }
+
+    <main class="keep-shell__main">
+      @if (statusMessage) {
+        <p class="form-message form-message--success keep-shell__message">{{ statusMessage }}</p>
+      }
+
+      @if (errorMessage) {
+        <p class="form-message form-message--error keep-shell__message">{{ errorMessage }}</p>
+      }
+
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</section>

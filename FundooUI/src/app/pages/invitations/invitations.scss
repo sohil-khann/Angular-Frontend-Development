@@ -1,0 +1,53 @@
+.page-card {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 54rem;
+  padding: 1.5rem;
+  border: 1px solid var(--fundoo-border);
+  border-radius: 1.2rem;
+  background: #fff;
+}
+
+.page-card__header h2,
+.invitation-card h3 {
+  margin: 0;
+}
+
+.page-card__header p,
+.invitation-card p,
+.invitation-card small {
+  margin: 0.35rem 0 0;
+  color: var(--fundoo-text-soft);
+}
+
+.page-placeholder {
+  margin: 0;
+  color: var(--fundoo-text-soft);
+}
+
+.invitation-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.invitation-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--fundoo-border);
+  border-radius: 1rem;
+}
+
+.invitation-card__actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .invitation-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,79 @@
+<article class="note-card" [style.--note-color]="note.color" (click)="edit.emit(note)">
+  <div class="note-card__header">
+    <h3>{{ note.title }}</h3>
+  </div>
+
+  @if (note.description) {
+    <p class="note-card__description">{{ note.description }}</p>
+  }
+
+  @if (note.labels.length) {
+    <div class="note-card__labels">
+      @for (label of note.labels; track label.id) {
+        <span class="note-card__label-chip">{{ label.name }}</span>
+      }
+    </div>
+  }
+
+  <div class="note-card__meta">
+    <span>Updated {{ updatedDate }}</span>
+    @if (note.reminder) {
+      <span>{{ reminderDate }}</span>
+    }
+    @if (note.collaborators.length) {
+      <span>{{ note.collaborators.length }} collaborator(s)</span>
+    }
+  </div>
+
+  <div class="note-card__actions">
+    @if (view !== 'trash') {
+      <button
+        type="button"
+        class="note-card__icon-button"
+        title="Pin note"
+        (click)="pinToggle.emit(note); $event.stopPropagation()"
+      >
+        <img class="icon" src="pin.png" alt="Pin" />
+      </button>
+      <button
+        type="button"
+        class="note-card__icon-button"
+        title="Edit note"
+        (click)="edit.emit(note); $event.stopPropagation()"
+      >
+        <img class="icon" src="edit.png" alt="Edit">
+      </button>
+      <button
+        type="button"
+        class="note-card__icon-button"
+        title="{{ note.isArchived ? 'Unarchive note' : 'Archive note' }}"
+        (click)="archiveToggle.emit(note); $event.stopPropagation()"
+      >
+        <img class="icon" src="archive.png" alt="Archive">
+      </button>
+      <button
+        type="button"
+        class="note-card__icon-button"
+        title="Move note to trash"
+        (click)="moveToTrash.emit(note); $event.stopPropagation()"
+      >
+        <img class="icon" src="trash.png" alt="Trash">
+      </button>
+    } @else {
+      <button
+        type="button"
+        class="secondary-button"
+        (click)="restore.emit(note); $event.stopPropagation()"
+      >
+        Restore
+      </button>
+      <button
+        type="button"
+        class="danger-button"
+        (click)="deletePermanently.emit(note); $event.stopPropagation()"
+      >
+        Delete Forever
+      </button>
+    }
+  </div>
+</article>

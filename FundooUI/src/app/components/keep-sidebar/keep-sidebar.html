@@ -1,0 +1,48 @@
+<aside class="keep-sidebar">
+  @for (item of primaryItems; track item.label) {
+    <a
+      [routerLink]="item.path"
+      routerLinkActive="keep-sidebar__item--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="keep-sidebar__item"
+    >
+      <span class="keep-sidebar__icon keep-sidebar__icon--{{ item.icon }}" aria-hidden="true"></span>
+      <span class="keep-sidebar__label">{{ item.label }}</span>
+    </a>
+  }
+
+  @if (labels?.length) {
+    <div class="keep-sidebar__separator"></div>
+
+    <p class="keep-sidebar__section-title">Labels</p>
+
+    @for (label of labels; track label.id) {
+      <a
+        [routerLink]="['/home/labels', label.id]"
+        routerLinkActive="keep-sidebar__item--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="keep-sidebar__item"
+      >
+        <span
+          class="keep-sidebar__dot"
+          [style.background]="label.color || '#f1f3f4'"
+          aria-hidden="true"
+        ></span>
+        <span class="keep-sidebar__label">{{ label.name }}</span>
+      </a>
+    }
+  }
+
+  <div class="keep-sidebar__separator"></div>
+
+  @for (item of secondaryItems; track item.label) {
+    <a
+      [routerLink]="item.path"
+      routerLinkActive="keep-sidebar__item--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="keep-sidebar__item keep-sidebar__item--muted"
+    >
+      <span class="keep-sidebar__label">{{ item.label }}</span>
+    </a>
+  }
+</aside>

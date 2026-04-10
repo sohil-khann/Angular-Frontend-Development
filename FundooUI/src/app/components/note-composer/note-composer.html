@@ -1,0 +1,56 @@
+<div class="note-composer" [style.--composer-color]="selectedColor">
+  @if (!isExpanded) {
+    <button type="button" class="note-composer__collapsed" (click)="expandComposer()">
+      Take a note...
+    </button>
+  } @else {
+    <form [formGroup]="noteForm" class="note-composer__expanded" (ngSubmit)="submitNote()">
+      <div class="note-composer__top-row">
+        <input type="text" formControlName="title" placeholder="Title" />
+        <button type="button" class="note-composer__pin" (click)="togglePin()">
+          {{ isPinned ? 'Pinned' : 'Pin note' }}
+        </button>
+      </div>
+
+      <textarea
+        formControlName="description"
+        placeholder="Take a note..."
+        rows="4"
+      ></textarea>
+
+      @if (availableLabels.length) {
+        <div class="note-composer__labels">
+          @for (label of availableLabels; track label.id) {
+            <button
+              type="button"
+              class="note-composer__label-chip"
+              [class.note-composer__label-chip--active]="selectedLabelIds.includes(label.id)"
+              (click)="toggleLabel(label.id)"
+            >
+              {{ label.name }}
+            </button>
+          }
+        </div>
+      }
+
+      <div class="note-composer__footer">
+        <div class="note-composer__colors">
+          @for (color of colorOptions; track color) {
+            <button
+              type="button"
+              class="note-composer__color"
+              [class.note-composer__color--active]="selectedColor === color"
+              [style.background]="color"
+              (click)="selectColor(color)"
+            ></button>
+          }
+        </div>
+
+        <div class="note-composer__actions">
+          <button type="button" class="secondary-button" (click)="collapseComposer()">Close</button>
+          <button type="submit">Add Note</button>
+        </div>
+      </div>
+    </form>
+  }
+</div>

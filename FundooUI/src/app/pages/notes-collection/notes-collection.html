@@ -1,0 +1,36 @@
+<app-notes-board
+  [title]="pageTitle"
+  [notes]="notes"
+  [view]="view"
+  [searchText]="searchText"
+  [availableLabels]="availableLabels"
+  [preselectedLabelIds]="preselectedLabelIds"
+  [isLoading]="isLoadingNotes"
+  [statusMessage]="statusMessage"
+  [errorMessage]="errorMessage"
+  [showComposer]="showComposer"
+  [emptyMessage]="emptyMessage"
+  [showEmptyTrashAction]="view === 'trash' && notes.length > 0"
+  (noteCreated)="createNote($event)"
+  (editNote)="openEditor($event)"
+  (pinToggle)="togglePin($event)"
+  (archiveToggle)="toggleArchive($event)"
+  (moveToTrash)="moveToTrash($event)"
+  (restoreNote)="restoreNote($event)"
+  (deletePermanently)="deleteNotePermanently($event)"
+  (emptyTrashRequested)="emptyTrash()"
+></app-notes-board>
+
+@if (isEditorOpen && selectedNote) {
+  <app-note-editor-dialog
+    [note]="selectedNote"
+    [availableLabels]="availableLabels"
+    [collaborators]="selectedCollaborators"
+    [isSaving]="isWorking"
+    [errorMessage]="editorErrorMessage"
+    (closed)="closeEditor()"
+    (saved)="saveNote($event)"
+    (collaboratorInvited)="inviteCollaborator($event)"
+    (collaboratorRemoved)="removeCollaborator($event)"
+  ></app-note-editor-dialog>
+}

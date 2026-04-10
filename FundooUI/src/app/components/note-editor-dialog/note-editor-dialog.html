@@ -1,0 +1,110 @@
+<div class="dialog-backdrop" (click)="closed.emit()">
+  <section class="dialog-card" (click)="$event.stopPropagation()">
+    <div class="dialog-card__header">
+      <div>
+        <h2>Edit note</h2>
+        <p>Update note details, labels, reminders, and collaborators.</p>
+      </div>
+      <button type="button" class="secondary-button" (click)="closed.emit()">Close</button>
+    </div>
+
+    @if (errorMessage) {
+      <p class="form-message form-message--error">{{ errorMessage }}</p>
+    }
+
+    <form [formGroup]="noteForm" class="dialog-form" (ngSubmit)="submitNote()">
+      <label class="field-group">
+        <span>Title</span>
+        <input type="text" formControlName="title" />
+      </label>
+
+      <label class="field-group">
+        <span>Description</span>
+        <textarea formControlName="description" rows="5"></textarea>
+      </label>
+
+      <div class="dialog-grid">
+        <label class="field-group">
+          <span>Reminder</span>
+          <input type="datetime-local" formControlName="reminder" />
+        </label>
+
+        <label class="field-group">
+          <span>Color</span>
+          <div class="dialog-color-list">
+            @for (color of colorOptions; track color) {
+              <button
+                type="button"
+                class="dialog-color"
+                [class.dialog-color--active]="noteForm.controls.color.value === color"
+                [style.background]="color"
+                (click)="noteForm.controls.color.setValue(color)"
+              ></button>
+            }
+          </div>
+        </label>
+      </div>
+
+      <div class="dialog-grid">
+        <label class="checkbox-row">
+          <input type="checkbox" formControlName="isPinned" />
+          <span>Pinned</span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" formControlName="isArchived" />
+          <span>Archived</span>
+        </label>
+      </div>
+
+      <div class="dialog-section">
+        <h3>Labels</h3>
+        <div class="dialog-chip-list">
+          @for (label of availableLabels; track label.id) {
+            <button
+              type="button"
+              class="dialog-chip"
+              [class.dialog-chip--active]="isLabelSelected(label.id)"
+              (click)="toggleLabel(label.id)"
+            >
+              {{ label.name }}
+            </button>
+          }
+        </div>
+      </div>
+
+      <div class="dialog-section">
+        <h3>Collaborators</h3>
+
+        <div [formGroup]="inviteForm" class="dialog-inline-form">
+          <input type="email" formControlName="collaboratorEmail" placeholder="Invite by email" />
+          <input type="text" formControlName="message" placeholder="Optional message" />
+          <button type="button" class="secondary-button" (click)="submitInvitation()">Invite</button>
+        </div>
+
+        <div class="dialog-collaborators">
+          @for (collaborator of collaborators; track collaborator.id) {
+            <article class="dialog-collaborator">
+              <div>
+                <strong>{{ collaborator.collaboratorName || collaborator.collaboratorEmail }}</strong>
+                <p>{{ collaborator.hasAccepted ? 'Accepted invitation' : 'Invitation pending' }}</p>
+              </div>
+              <button
+                type="button"
+                class="danger-button"
+                (click)="collaboratorRemoved.emit(collaborator)"
+              >
+                Remove
+              </button>
+            </article>
+          }
+        </div>
+      </div>
+
+      <div class="dialog-card__footer">
+        <button type="button" class="secondary-button" (click)="closed.emit()">Cancel</button>
+        <button type="submit" [disabled]="isSaving">Save changes</button>
+      </div>
+    </form>
+  </section>
+</div>

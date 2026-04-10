@@ -1,0 +1,53 @@
+<section class="page-card">
+  <div class="page-card__header">
+    <div>
+      <h2>Active sessions</h2>
+      <p>Review where your account is logged in and terminate sessions you no longer need.</p>
+    </div>
+
+    <button type="button" class="secondary-button" (click)="terminateAllOtherSessions()">
+      Terminate all other sessions
+    </button>
+  </div>
+
+  @if (statusMessage) {
+    <p class="form-message form-message--success">{{ statusMessage }}</p>
+  }
+
+  @if (errorMessage) {
+    <p class="form-message form-message--error">{{ errorMessage }}</p>
+  }
+
+  @if (isLoading) {
+    <p class="page-placeholder">Loading sessions...</p>
+  } @else if (!sessionsData) {
+    <p class="page-placeholder">No session information is available.</p>
+  } @else {
+    <p class="sessions-summary">
+      {{ sessionsData.activeSessionsCount }} active sessions for {{ sessionsData.email }}
+    </p>
+
+    <div class="session-list">
+      @for (session of sessionsData.sessions; track session.sessionId) {
+        <article class="session-card">
+          <div>
+            <h3>
+              {{ session.isCurrentSession ? 'Current session' : 'Signed-in device' }}
+            </h3>
+            <p>{{ session.userAgent || 'Unknown browser' }}</p>
+            <small>
+              {{ session.ipAddress || 'No IP address' }} • Expires
+              {{ session.expiresAt | date: 'medium' }}
+            </small>
+          </div>
+
+          @if (!session.isCurrentSession) {
+            <button type="button" class="danger-button" (click)="terminateSession(session)">
+              Terminate
+            </button>
+          }
+        </article>
+      }
+    </div>
+  }
+</section>

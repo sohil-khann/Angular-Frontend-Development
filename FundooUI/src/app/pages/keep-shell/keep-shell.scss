@@ -1,0 +1,33 @@
+.keep-shell {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.keep-shell__body {
+  display: grid;
+  grid-template-columns: 17rem minmax(0, 1fr);
+  min-height: calc(100vh - 4.65rem);
+  transition: grid-template-columns 0.2s ease;
+}
+
+.keep-shell__body--sidebar-closed {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.keep-shell__main {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.keep-shell__message {
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 1100px) {
+  .keep-shell__body {
+    grid-template-columns: 1fr;
+  }
+
+  .keep-shell__main {
+    padding: 1rem;
+  }
+}

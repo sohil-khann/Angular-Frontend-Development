@@ -1,0 +1,56 @@
+<section class="page-card">
+  <div class="page-card__header">
+    <div>
+      <h2>Edit labels</h2>
+      <p>Create, rename, and remove the labels shown in the sidebar.</p>
+    </div>
+  </div>
+
+  @if (statusMessage) {
+    <p class="form-message form-message--success">{{ statusMessage }}</p>
+  }
+
+  @if (errorMessage) {
+    <p class="form-message form-message--error">{{ errorMessage }}</p>
+  }
+
+  <form [formGroup]="labelForm" class="page-form" (ngSubmit)="onSubmit()">
+    <label class="field-group">
+      <span>Label name</span>
+      <input type="text" formControlName="name" placeholder="Example: Personal" />
+    </label>
+
+    <label class="field-group">
+      <span>Label color</span>
+      <input type="color" formControlName="color" />
+    </label>
+
+    <div class="page-form__actions">
+      @if (editingLabelId) {
+        <button type="button" class="secondary-button" (click)="cancelEdit()">Cancel</button>
+      }
+      <button type="submit" [disabled]="isSubmitting">
+        {{ editingLabelId ? 'Update label' : 'Create label' }}
+      </button>
+    </div>
+  </form>
+
+  <div class="label-list">
+    @for (label of labels; track label.id) {
+      <article class="label-list__item">
+        <div class="label-list__info">
+          <span class="label-dot" [style.background]="label.color || '#f1f3f4'"></span>
+          <div>
+            <h3>{{ label.name }}</h3>
+            <p>{{ label.noteCount }} linked notes</p>
+          </div>
+        </div>
+
+        <div class="label-list__actions">
+          <button type="button" class="secondary-button" (click)="startEdit(label)">Edit</button>
+          <button type="button" class="danger-button" (click)="deleteLabel(label)">Delete</button>
+        </div>
+      </article>
+    }
+  </div>
+</section>

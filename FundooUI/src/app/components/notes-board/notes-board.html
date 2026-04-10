@@ -1,0 +1,78 @@
+<section class="notes-board">
+  <div class="notes-board__header">
+    <div>
+      <h2>{{ title }}</h2>
+      <p>Search filters this route locally, just like a focused board view.</p>
+    </div>
+
+    @if (showEmptyTrashAction) {
+      <button type="button" class="secondary-button" (click)="emptyTrashRequested.emit()">
+        Empty trash
+      </button>
+    }
+  </div>
+
+  @if (statusMessage) {
+    <p class="form-message form-message--success">{{ statusMessage }}</p>
+  }
+
+  @if (errorMessage) {
+    <p class="form-message form-message--error">{{ errorMessage }}</p>
+  }
+
+  @if (showComposer) {
+    <app-note-composer
+      [availableLabels]="availableLabels"
+      [preselectedLabelIds]="preselectedLabelIds"
+      (noteSubmitted)="noteCreated.emit($event)"
+    ></app-note-composer>
+  }
+
+  @if (isLoading) {
+    <div class="notes-board__placeholder">Loading notes...</div>
+  } @else if (!filteredNotes.length) {
+    <div class="notes-board__placeholder">{{ emptyMessage }}</div>
+  } @else {
+    @if (pinnedNotes.length) {
+      <section class="notes-board__section">
+        <p class="notes-board__section-title">Pinned</p>
+        <div class="notes-board__grid">
+          @for (note of pinnedNotes; track note.id) {
+            <app-note-card
+              [note]="note"
+              [view]="view"
+              (edit)="editNote.emit($event)"
+              (pinToggle)="pinToggle.emit($event)"
+              (archiveToggle)="archiveToggle.emit($event)"
+              (moveToTrash)="moveToTrash.emit($event)"
+              (restore)="restoreNote.emit($event)"
+              (deletePermanently)="deletePermanently.emit($event)"
+            ></app-note-card>
+          }
+        </div>
+      </section>
+    }
+
+    @if (otherNotes.length) {
+      <section class="notes-board__section">
+        <p class="notes-board__section-title">
+          {{ pinnedNotes.length ? 'Others' : title }}
+        </p>
+        <div class="notes-board__grid">
+          @for (note of otherNotes; track note.id) {
+            <app-note-card
+              [note]="note"
+              [view]="view"
+              (edit)="editNote.emit($event)"
+              (pinToggle)="pinToggle.emit($event)"
+              (archiveToggle)="archiveToggle.emit($event)"
+              (moveToTrash)="moveToTrash.emit($event)"
+              (restore)="restoreNote.emit($event)"
+              (deletePermanently)="deletePermanently.emit($event)"
+            ></app-note-card>
+          }
+        </div>
+      </section>
+    }
+  }
+</section>

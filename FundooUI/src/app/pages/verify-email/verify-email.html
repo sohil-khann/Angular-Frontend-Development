@@ -1,0 +1,37 @@
+<section class="login-page">
+  <div class="login-card">
+    <div class="brand">
+      <span class="brand__letter brand__letter--blue">F</span>
+      <span class="brand__letter brand__letter--red">u</span>
+      <span class="brand__letter brand__letter--yellow">n</span>
+      <span class="brand__letter brand__letter--blue">d</span>
+      <span class="brand__letter brand__letter--green">o</span>
+      <span class="brand__letter brand__letter--red">o</span>
+    </div>
+
+    <h1>Verify email</h1>
+    <p class="subtitle">Use the token from your email, or open the direct verification link.</p>
+
+    <form [formGroup]="verifyForm" (ngSubmit)="onSubmit()" novalidate>
+      <div class="field-group">
+        <input type="text" formControlName="token" placeholder="Verification token" />
+        @if (hasControlError()) {
+          <p class="field-error">Verification token is required.</p>
+        }
+      </div>
+
+      @if (successMessage) {
+        <p class="form-message form-message--success">{{ successMessage }}</p>
+      }
+
+      @if (errorMessage) {
+        <p class="form-message form-message--error">{{ errorMessage }}</p>
+      }
+
+      <div class="form-actions">
+        <a routerLink="/login" class="text-link">Back to sign in</a>
+        <button type="submit">{{ isSubmitting ? 'Verifying...' : 'Verify Email' }}</button>
+      </div>
+    </form>
+  </div>
+</section>

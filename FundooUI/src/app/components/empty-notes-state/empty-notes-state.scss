@@ -1,0 +1,23 @@
+.empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+  color: rgba(95, 99, 104, 0.86);
+}
+
+.empty-state__icon {
+  width: 5.8rem;
+  height: 5.8rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 8px solid rgba(218, 220, 224, 0.75);
+  font-size: 2rem;
+  color: rgba(218, 220, 224, 0.9);
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 1.5rem;
+}
